@@ -45,6 +45,4 @@ class GmailCount
     getCount(username, password)
     sleep 2
   }
-
-
 end
