@@ -62,6 +62,8 @@ class GmailCount
 
     @countHash.each() { |uname, mailcount|
       #puts 'lcd'
+      #limit the length of the email acct name to 10
+      uname = uname.sub[0,9]
       @lcd.lcdPrint(uname + " : " + mailcount)
       sleep 2
     }
